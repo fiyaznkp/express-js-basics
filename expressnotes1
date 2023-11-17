@@ -1,3 +1,0 @@
-1. express application generator
-
-it is used for quickly creation of an app skelton, we can run the app generator with npx express-generator
