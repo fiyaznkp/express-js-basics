@@ -8,13 +8,14 @@ app.get("/products",(req,res)=>{
     res.send("All Products")
 })
 
-app.get("/products/laptop",(req,res)=>{
-    res.send("Laptops")
+app.get("/products/:category/:brand",(req,res)=>{
+   const {category} = req.params
+   const {brand} = req.params
+
+   res.send(`product:${category} and ${brand}`)
+   
 })
 
-app.get("/products/mobiles",(req,res)=>{
-    res.send("Mobiles")
-})
 
 app.listen(port,()=>{
     console.log("server running on port 5173")
