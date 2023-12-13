@@ -1,0 +1,1 @@
+it is used to acess body of the request and expose it in req.body. it is esential when using post,put,patch or delete
